@@ -1,8 +1,16 @@
 /* Global styles
 -----------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
+	margin:0;
 }
 .work h2, .education h2, .footer h2 {
 	font-size: 40px;
@@ -14,17 +22,53 @@ a{
 a:hover{
 	text-decoration: none;
 }
-/* Header and Footer
------------------------*/
-header, footer {
-	background: #CD6600;
+h2{
+	margin-top:0;
 }
-header h1	{
-	font-size: 80px;
-	color: #D02090;
-	font-family: 'Black And White Picture', sans-serif;
+.content-wrap{
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 50px;
+	overflow: auto;
+}
+.col-narrow{
+	width: 30%;
+	float: left;
+}
+.col-wide{
+	width: 70%;
+	float: left;
+	padding-left: 20px;
 }
 
+/* Header
+-----------------------*/
+.profile-img{
+	border-radius: 80px;
+
+}
+header{
+	background:#CD6600;
+}
+header h1{
+	margin: 0;
+	font-size: 80px;
+	color: #D02090;
+	font-family: 'Monoton', cursive;
+}
+/* Footer
+__________________________________*/
+
+.footer{
+	background: #696969;
+	text-align: center;
+}
+.contact-info a {
+	background: purple;
+	margin: 10px;
+	padding: 13px;
+	display: inline-block;
+}
 /* Work Experience
 -----------------------*/
 .work{
@@ -34,9 +78,4 @@ header h1	{
 -----------------------*/
 .education{
 	background: #FF8C00;
-}
-/* Footer
-__________________________________*/
-.footer{
-	background: #696969;
 }
