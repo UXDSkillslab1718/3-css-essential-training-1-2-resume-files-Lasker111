@@ -32,7 +32,8 @@ h3 {
 	max-width: 950px;
 	margin: 0 auto;
 	padding: 50px;
-	overflow: auto;
+	overflow: hidden;
+	
 }
 .col-narrow{
 	width: 30%;
@@ -46,6 +47,13 @@ h3 {
 .upercase{
 	text-transform: uppercase;
 }
+.button{
+	text-decoration: none;
+	background: blue;
+	color: white;
+	padding: 10px;
+	display: inline-block;
+}
 
 /* Header
 -----------------------*/
@@ -55,12 +63,19 @@ h3 {
 }
 header{
 	background:#CD6600;
+	padding-top: 50px;
+	position: relative;
 }
 header h1{
 	margin: 0;
 	font-size: 80px;
 	color: #D02090;
 	font-family: 'Monoton', cursive;
+}
+.download{
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 /* Footer
 __________________________________*/
@@ -87,4 +102,23 @@ h3 ~ p {
 -----------------------*/
 .education{
 	background: #FF8C00;
+}
+/* Navigation
+-----------------------*/
+nav{
+	text-align: center;
+	background: white;
+	position: fixed;
+	top: 0px;
+	left: 0;
+	right: 0;
+}
+nav a{
+	display: inline-block;
+	padding: 10px 40px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 25px;
+	font-family: 'Indie Flower', cursive;
 }
