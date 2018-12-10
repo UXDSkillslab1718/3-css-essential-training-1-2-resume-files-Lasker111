@@ -62,7 +62,8 @@ h3 {
 
 }
 header{
-	background:#CD6600;
+	background: linear-gradient(rgba(205, 102, 0, 0.8),rgba(205, 102, 0, 0.5)), url(../image/university.jpg) no-repeat fixed;
+	background-size: cover;
 	padding-top: 50px;
 	position: relative;
 }
@@ -81,7 +82,7 @@ header h1{
 __________________________________*/
 
 .footer{
-	background: #696969;
+	background: linear-gradient(rgba(105, 105, 105, 0.8),rgba(105, 105, 105, 0.5));
 	text-align: center;
 }
 .contact-info a {
@@ -96,12 +97,12 @@ h3 ~ p {
 	margin: 0;
 }
 .work{
-	background: #C1CDCD;
+	background: linear-gradient(rgba(193, 205, 205, 0.8),rgba(193, 205, 205, 0.5));
 }
 /* Education 
 -----------------------*/
 .education{
-	background: #FF8C00;
+	background: linear-gradient(rgba(255, 140, 0, 0.8),rgba(255, 140, 0, 0.5));
 }
 /* Navigation
 -----------------------*/
