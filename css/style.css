@@ -25,6 +25,9 @@ a:hover{
 h2{
 	margin-top:0;
 }
+h3 {
+	margin:0;
+}
 .content-wrap{
 	max-width: 950px;
 	margin: 0 auto;
@@ -39,6 +42,9 @@ h2{
 	width: 70%;
 	float: left;
 	padding-left: 20px;
+}
+.upercase{
+	text-transform: uppercase;
 }
 
 /* Header
@@ -71,6 +77,9 @@ __________________________________*/
 }
 /* Work Experience
 -----------------------*/
+h3 ~ p {
+	margin: 0;
+}
 .work{
 	background: #C1CDCD;
 }
