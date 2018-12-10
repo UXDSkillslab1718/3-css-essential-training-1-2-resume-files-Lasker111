@@ -123,3 +123,13 @@ nav a{
 	font-size: 25px;
 	font-family: 'Indie Flower', cursive;
 }
+/* Media Queries
+-----------------------*/
+@media (max-width:899px){
+	header{
+		text-align: center;
+	}
+	.profile-img{
+		width:200px;
+	}
+}
